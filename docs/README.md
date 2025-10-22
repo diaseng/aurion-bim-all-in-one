@@ -1,0 +1,1 @@
+# AURION BIM — ALL‑IN‑ONE v4.0 (FULL)

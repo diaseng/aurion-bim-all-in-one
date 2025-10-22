@@ -1,0 +1,12 @@
+name: Deploy Backend (Railway)
+on: { push: { branches: [ main ], paths: [ 'apps/backend/**' ] } }
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: railwayapp/actions@v1
+        with:
+          railwayToken: ${{ secrets.RAILWAY_TOKEN }}
+          service: api
+          path: apps/backend
